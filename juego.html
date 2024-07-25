@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div id="timer-container">
+        <p id="timer">Tiempo restante: 1 minutos 0 segundos</p>
+    </div>
+    <div id="game-container">
+        <h1>Juego del Ahorcado</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <button id="start-button" onclick="startGame()">Comenzar Juego</button>
+        </div>
+        <div id="game-content" style="display: none;">
+            <canvas id="hangman-canvas" width="200" height="250"></canvas>
+            <p id="word-display">_ _ _ _ _ _ _ _ _ _ _ _</p>
+            <div id="keyboard"></div>
+            <p id="message"></p>
+            <button id="reset-button" onclick="resetGame()">Reiniciar Juego</button>
+        </div>
+    </div>
+    
+    <script src="juego.js"></script>
+</body>
+<body id="pagina">
+
+</html>

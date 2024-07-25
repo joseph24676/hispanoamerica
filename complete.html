@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Completar Palabras - Hugo Mayo</title>
+    <link rel="stylesheet" href="complete.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Completar Palabras</h1>
+        <p>Completa las palabras en los siguientes textos seleccionando la opción correcta:</p>
+        
+        <div class="text-container">
+            <p id="text1">
+                Hugo Mayo es conocido por su obra <span class="blank" data-answer="narrativa"></span>. Sus escritos a menudo exploran temas de <span class="blank" data-answer="identidad"></span> y <span class="blank" data-answer="cultura"></span>.
+            </p>
+            <div class="options">
+                <div class="option-group" data-answer="narrativa">
+                    <p>1. <span class="option">Narrativa</span></p>
+                    <p>2. <span class="option">Poética</span></p>
+                    <p>3. <span class="option">Dramática</span></p>
+                </div>
+                <div class="option-group" data-answer="identidad">
+                    <p>1. <span class="option">Identidad</span></p>
+                    <p>2. <span class="option">Evasión</span></p>
+                    <p>3. <span class="option">Destino</span></p>
+                </div>
+                <div class="option-group" data-answer="cultura">
+                    <p>1. <span class="option">Cultura</span></p>
+                    <p>2. <span class="option">Tecnología</span></p>
+                    <p>3. <span class="option">Política</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <p id="text2">
+                La obra de Hugo Mayo refleja una profunda <span class="blank" data-answer="reflexión"></span> sobre la <span class="blank" data-answer="sociedad"></span>. Sus personajes a menudo enfrentan dilemas de <span class="blank" data-answer="moralidad"></span>.
+            </p>
+            <div class="options">
+                <div class="option-group" data-answer="reflexión">
+                    <p>1. <span class="option">Reflexión</span></p>
+                    <p>2. <span class="option">Entretenimiento</span></p>
+                    <p>3. <span class="option">Ficción</span></p>
+                </div>
+                <div class="option-group" data-answer="sociedad">
+                    <p>1. <span class="option">Sociedad</span></p>
+                    <p>2. <span class="option">Naturaleza</span></p>
+                    <p>3. <span class="option">Historia</span></p>
+                </div>
+                <div class="option-group" data-answer="moralidad">
+                    <p>1. <span class="option">Moralidad</span></p>
+                    <p>2. <span class="option">Diversión</span></p>
+                    <p>3. <span class="option">Imaginación</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <p id="text3">
+                En los relatos de Hugo Mayo, el tema de la <span class="blank" data-answer="alienación"></span> es recurrente. Los personajes a menudo se sienten <span class="blank" data-answer="desconectados"></span> de su entorno y de sí mismos.
+            </p>
+            <div class="options">
+                <div class="option-group" data-answer="alienación">
+                    <p>1. <span class="option">Alienación</span></p>
+                    <p>2. <span class="option">Felicidad</span></p>
+                    <p>3. <span class="option">Comunidad</span></p>
+                </div>
+                <div class="option-group" data-answer="desconectados">
+                    <p>1. <span class="option">Desconectados</span></p>
+                    <p>2. <span class="option">Cercanos</span></p>
+                    <p>3. <span class="option">Unidos</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <p id="text4">
+                Hugo Mayo explora el impacto de la <span class="blank" data-answer="modernidad"></span> en la vida de sus personajes. Las <span class="blank" data-answer="transformaciones"></span> sociales y tecnológicas son temas frecuentes en sus escritos.
+            </p>
+            <div class="options">
+                <div class="option-group" data-answer="modernidad">
+                    <p>1. <span class="option">Modernidad</span></p>
+                    <p>2. <span class="option">Tradición</span></p>
+                    <p>3. <span class="option">Naturaleza</span></p>
+                </div>
+                <div class="option-group" data-answer="transformaciones">
+                    <p>1. <span class="option">Transformaciones</span></p>
+                    <p>2. <span class="option">Estabilidad</span></p>
+                    <p>3. <span class="option">Inmutabilidad</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <p id="text5">
+                La crítica social en los escritos de Hugo Mayo se manifiesta a través de una profunda <span class="blank" data-answer="observación"></span> de la <span class="blank" data-answer="realidad"></span>. Sus personajes a menudo enfrentan conflictos internos relacionados con la <span class="blank" data-answer="justicia"></span>.
+            </p>
+            <div class="options">
+                <div class="option-group" data-answer="observación">
+                    <p>1. <span class="option">Observación</span></p>
+                    <p>2. <span class="option">Imaginación</span></p>
+                    <p>3. <span class="option">Abstracción</span></p>
+                </div>
+                <div class="option-group" data-answer="realidad">
+                    <p>1. <span class="option">Realidad</span></p>
+                    <p>2. <span class="option">Sueño</span></p>
+                    <p>3. <span class="option">Ficción</span></p>
+                </div>
+                <div class="option-group" data-answer="justicia">
+                    <p>1. <span class="option">Justicia</span></p>
+                    <p>2. <span class="option">Poder</span></p>
+                    <p>3. <span class="option">Riqueza</span></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Comprobar Respuestas</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="complete.js"></script>
+</body>
+</html>
+

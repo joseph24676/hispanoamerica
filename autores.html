@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(blue-background-14466365179vp.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: #82f1d0f1;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 20px; /* Espacio entre contenedores */
+            font-size: bold;
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .author {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+            font-weight: bold;
+            text-align: center;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 48%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        /* Estilos para el segundo contenedor */
+        .container-2 {
+            background: #82f1a3f1;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .image-group {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-group img {
+            width: 150px; /* Cambia el tamaño de las imágenes según lo necesario */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            margin-bottom: 10px; /* Espacio entre imágenes */
+        }
+        .image-group img:hover {
+            transform: scale(1.05);
+        }
+        .image-caption {
+            font-size: 0.8em;
+            color: #333;
+        }
+    </style>
+</head>
+<div class="title">Autores</div>
+<body>
+  
+    
+    <!-- Segundo contenedor con imágenes y nombres -->
+    
+    <div class="container-2">
+        <div class="image-group">
+            <img src="leo.jpg" alt="Imagen 3">
+            <div class="image-caption">Anchundia José Leonardo</div>
+        </div>
+        <div class="image-group">
+            <img src="karen.jpg" alt="Imagen 4">
+            <div class="image-caption">García Karen Dennise</div>
+        </div>
+        <div class="image-group">
+            <img src="laura.jpg" alt="Imagen 5">
+            <div class="image-caption">Ponce Laura Beatriz</div>
+        </div>
+        <div class="image-group">
+            <img src="obregon.jpg" alt="Imagen 6">
+            <div class="image-caption">Obregón Alisson Michelle</div>
+        </div>
+    </div>
+</body>
+</html>

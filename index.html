@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Menú</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu">
+        <img src="LOGO-ULEAM-HORIZONTAL.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="autores.html">Autores</a></li>
+            <li><a href="parcial1.html">Parcial 1</a></li>
+            <li><a href="parcial2.html">Parcial 2</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenido">
+        <div class="hero">
+            <div class="text-container">
+                <h1>UN VIAJE POR HISPANOAMERICA</h1>
+                <p>Vamos a sumergirnos en la historia y el legado de estas culturas, disfrutar de su arte y su literatura, y descubrir la belleza de sus paisajes y su arquitectura. Vamos a aprender sobre las tradiciones indígenas, y la influencia de la colonización en la cultura actual. Esperamos que esta experiencia les inspire a conocer más sobre la cultura hispanoamericana y a apreciar la diversidad y la riqueza de esta región del mundo. ¡Que disfruten del viaje!</p>
+            </div>
+            <img src="hispanoamerica.png" alt="Ejemplo de notas en dispositivos" class="devices">
+        </div>
+        <audio id="background-music" loop>
+            <source src="FOLKLORE DE COLOMBIA - APURE EN UN VIAJE (DIGITAL AUDIO).mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+        <button id="music-control" onclick="toggleMusic()">Pausar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

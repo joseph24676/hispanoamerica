@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para iconos -->
+    <style>
+        /* Estilos para el cuerpo con imagen de fondo */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex; /* Usar flexbox para centrar */
+            flex-direction: column; /* Permite colocar elementos uno encima del otro */
+            justify-content: flex-start; /* El contenido comienza desde la parte superior */
+            align-items: center; /* Centrar horizontalmente */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            background-image: url(images.jpg); /* Imagen de fondo */
+            background-size: cover; /* Escala para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* No repetir */
+            color: rgb(0, 0, 0); /* Color de texto para contraste con el fondo */
+        }
+
+        /* Estilos para el icono de inicio */
+        .home-icon {
+            position: absolute; /* Posiciona el icono en la esquina superior izquierda */
+            top: 15px; /* Margen superior */
+            left: 20px; /* Margen izquierdo */
+            font-size: 2em; /* Tamaño del icono */
+            color: rgb(44, 60, 201); /* Color del icono */
+            text-decoration: none; /* Sin subrayado */
+            transition: color 0.3s; /* Transición para efecto visual */
+        }
+
+        .home-icon:hover {
+            color: #000000; /* Cambia el color al pasar el ratón por encima */
+        }
+
+        /* Estilos para el título */
+        h1 {
+            font-family: Arial, sans-serif; /* Fuente del título */
+            margin-bottom: 120px; /* Espacio entre el título y la cuadrícula */
+            text-align: center; /* Asegura que el título esté centrado */
+            font-weight: bold; /* Negrita para el título */
+        }
+
+        /* Estilos para crear la cuadrícula */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+            gap: 40px; /* Espacio entre los cuadros */
+        }
+
+        /* Estilos para los círculos */
+        .tile {
+            background-color: rgb(13, 244, 132); /* Color de fondo con transparencia */
+            text-align: center; /* Centra el texto */
+            padding: 30px; /* Relleno para círculos más pequeños */
+            cursor: pointer; /* Cursor de mano para indicar que se puede hacer clic */
+            transition: all 0.3s; /* Transición para efectos de animación */
+            border-radius: 50%; /* Bordes redondeados para hacer círculos */
+            text-decoration: none; /* Sin subrayado */
+            display: flex; /* Flexbox para centrar contenido */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            width: 100px; /* Ancho fijo para los círculos más pequeños */
+            height: 100px; /* Altura fija para los círculos más pequeños */
+        }
+
+        /* Efecto dinámico al pasar el ratón por encima */
+        .tile:hover {
+            background-color: rgba(109, 161, 244, 0.91); /* Cambio de color al pasar el ratón por encima */
+            transform: scale(1.1); /* Crecimiento al pasar el ratón por encima */
+            box-shadow: 0px 10px 20px rgba(19, 19, 19, 0.478); /* Sombra para efecto de elevación */
+        }
+
+        /* Estilos para las secciones de contenido */
+        .content {
+            display: none; /* Oculto por defecto */
+            padding: 20px;
+            text-align: center; /* Centra el contenido */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            border-radius: 20px; /* Bordes redondeados */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            color: negro; /* Color del texto */
+            max-width: 80%; /* Ancho máximo del contenido */
+        }
+
+        /* Mostrar la sección seleccionada */
+        .content.active {
+            display: block; /* Mostrar solo la sección activa */
+        }
+
+        /* Estilos para el botón de reproducción/pausa */
+        .play-pause-btn {
+            position: fixed; /* Posiciona el botón en la esquina inferior derecha */
+            bottom: 20px; /* Margen inferior */
+            right: 20px; /* Margen derecho */
+            background-color: rgb(44, 60, 201); /* Color de fondo */
+            color: #ffffff; /* Color del texto */
+            border: none; /* Sin borde */
+            border-radius: 50%; /* Bordes redondeados */
+            width: 60px; /* Ancho fijo */
+            height: 60px; /* Altura fija */
+            font-size: 2em; /* Tamaño del icono */
+            display: flex; /* Flexbox para centrar contenido */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            cursor: pointer; /* Cursor de mano */
+            box-shadow: 0px 10px 20px rgba(19, 19, 19, 0.478); /* Sombra para efecto de elevación */
+            transition: background-color 0.3s; /* Transición para el cambio de color */
+        }
+
+        .play-pause-btn:hover {
+            background-color: rgb(33, 44, 150); /* Cambio de color al pasar el ratón por encima */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Reproductor de música de fondo -->
+<audio id="background-music" loop>
+    <source src="FOLKLORE DE COLOMBIA - APURE EN UN VIAJE (DIGITAL AUDIO).mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Icono de inicio -->
+<a class="home-icon" href="index.html"><i class="fas fa-home"></i></a> <!-- Icono de inicio -->
+
+<!-- Título centrado -->
+<h1>Segundo Parcial</h1>
+<div class="grid">
+    <a href="semana9.html" class="tile" style="color: #000000;">Semana 9</a>
+    <a href="semana10.html" class="tile" style="color: #000000;">Semana 10</a>
+    <a href="semana11.html" class="tile" style="color: #000000;">Semana 11</a>
+    <a href="semana12.html" class="tile" style="color: #000000;">Semana 12</a>
+    <a href="semana13.html" class="tile" style="color: #000000;">Semana 13</a>
+    <a href="semana14.html" class="tile" style="color: #000000;">Semana 14</a>
+    <a href="semana15.html" class="tile" style="color: #000000;">Semana 15</a>
+    <a href="semana16.html" class="tile" style="color: #000000;">Semana 16</a>
+</div>
+
+<!-- Botón de reproducción/pausa -->
+<button class="play-pause-btn" id="playPauseBtn">
+    <i class="fas fa-play" id="playPauseIcon"></i>
+</button>
+
+<script>
+    // JavaScript para controlar la reproducción y pausa
+    const audio = document.getElementById('background-music');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playPauseIcon = document.getElementById('playPauseIcon');
+
+    playPauseBtn.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+        } else {
+            audio.pause();
+            playPauseIcon.classList.remove('fa-pause');
+            playPauseIcon.classList.add('fa-play');
+        }
+    });
+</script>
+
+</body>
+</html>

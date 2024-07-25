@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia la fuente por una más moderna */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(251, 249, 249, 0.5), rgba(241, 238, 238, 0.854)), url('portal.jpg');
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    background-image: url('princi.jpg');
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.407);
+    background-blend-mode: overlay;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 130px;
+    height: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    display: block;
+    color: rgb(19, 33, 16);
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(11, 244, 240, 0.93); /* Fondo semitransparente */
+    border: 2px solid rgb(19, 33, 16); /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.menu li a:hover {
+    background-color: #ffffff;
+}
+
+#contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('background-image.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px; /* Reduce el padding general */
+    border-radius: 10px;
+}
+
+.text-container {
+    max-width: 600px;
+    text-align: left;
+    margin-right: 10px; /* Añade un margen a la derecha para acercarlo más a la imagen */
+}
+
+.hero h1 {
+    color: #050c08;
+    font-size: 48px; /* Aumenta el tamaño del título */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    font-weight: bold; /* Añade negrita al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+}
+
+.hero p {
+    color: #000000;
+    font-size: 20px; /* Aumenta el tamaño del párrafo */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    text-align: justify;
+    letter-spacing: 1px; /* Añade espaciado entre letras */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    font-weight: bold;
+}
+
+.devices {
+    max-width: 40%;
+    height: auto;
+    margin-left: 15px; /* Reduce el margen izquierdo para acercarlo más al texto */
+}
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(11, 244, 240, 0.93); /* Fondo semitransparente */
+    color: rgb(19, 33, 16);
+    border: 2px solid rgb(19, 33, 16); /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#music-control:hover {
+    background-color: #ffffff;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero h1, .hero p {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.hero h1 {
+    animation-delay: 1s; /* Retraso de la animación del título */
+}
+
+.hero p {
+    animation-delay: 3s; /* Retraso de la animación del párrafo */
+}

@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('tropical.png');
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: orange; /* Fondo de color naranja */
+    color: rgb(4, 4, 4); /* Color del texto */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 50px; /* Bordes redondeados para crear el fondo ovalado */
+    display: inline-block; /* Ajusta el ancho del fondo al tamaño del texto */
+}
+
+
+#gameBoard {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #333;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #0f0;
+}
+
+#food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+}
+
+#score {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#characterName {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+#congratsMessage {
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#instructions {
+    list-style-position: inside; /* Números dentro del área del contenedor */
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+#instructionsContainer {
+    background-color: #e0f7fa; /* Color celeste */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+}

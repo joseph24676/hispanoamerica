@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Divertido</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(juego.jpg);
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .cuadro {
+    background-color: #a9f0ee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    animation: jump 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .titulo {
+    color: #333;
+  }
+  
+  .descripcion {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .boton {
+    background-color: #2fc32a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+  }
+  
+  </style>
+
+</head>
+<body>
+
+<div class="cuadro">
+  <h1 class="titulo">¡Bienvenido a Juegos Divertidos!</h1>
+  <p class="descripcion"></p>
+  <button class="boton" id="boton-jugar" onclick="window.location.href='juego2.html'">CLICK PARA JUGAR</button>
+</div>
+
+</body>
+</html>

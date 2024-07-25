@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para iconos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('unnamed (1).jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #343a40; /* Fondo oscuro para el encabezado */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff; /* Texto blanco para mayor contraste */
+            font-size: 24px; /* Tamaño de fuente aumentado */
+        }
+
+        .section-title {
+            background-color: rgb(23, 251, 190); /* Fondo semitransparente */
+            color: #000000; /* Texto negro */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 8px; /* Bordes redondeados */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        .imagenes {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .imagenes img {
+            width: 90%; /* Ajuste el tamaño de las imágenes */
+            max-width: 600px; /* Amplíe el tamaño máximo */
+            height: auto;
+            margin: 20px auto; /* Espacio entre las imágenes */
+            display: block; /* Para centrar las imágenes */
+            border: 4px solid #41d45a; /* Borde azul más grueso */
+            border-radius: 10px; /* Esquinas redondeadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .video {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        footer {
+            background-color: #343a40; /* Fondo oscuro para el pie de página */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #ffffff; /* Texto blanco para el pie de página */
+        }
+
+        .pdf {
+            margin: 20px auto; /* Centrar el contenido */
+            max-width: 800px; /* Limitar el ancho máximo */
+            text-align: center;
+        }
+
+        .embed-pdf {
+            width: 100%; /* Ajustar el ancho del PDF */
+            max-width: 100%; /* Ajustar el ancho máximo del PDF */
+            height: 600px; /* Altura del PDF */
+        }
+
+        /* Estilos para el botón de reproducción/pausa */
+        .play-pause-btn {
+            position: fixed; /* Posiciona el botón en la esquina inferior derecha */
+            bottom: 20px; /* Margen inferior */
+            right: 20px; /* Margen derecho */
+            background-color: rgb(44, 60, 201); /* Color de fondo */
+            color: #ffffff; /* Color del texto */
+            border: none; /* Sin borde */
+            border-radius: 50%; /* Bordes redondeados */
+            width: 60px; /* Ancho fijo */
+            height: 60px; /* Altura fija */
+            font-size: 2em; /* Tamaño del icono */
+            display: flex; /* Flexbox para centrar contenido */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            cursor: pointer; /* Cursor de mano */
+            box-shadow: 0px 10px 20px rgba(19, 19, 19, 0.478); /* Sombra para efecto de elevación */
+            transition: background-color 0.3s; /* Transición para el cambio de color */
+        }
+
+        .play-pause-btn:hover {
+            background-color: rgb(33, 44, 150); /* Cambio de color al pasar el ratón por encima */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEMANA 9</h1>
+    </header>
+
+    <section class="pdf">
+        <h3 class="section-title">La Búsqueda de identidad, y el encuentro con el pasado en “Pedro Páramo”</h3>
+        <div class="pdf-container">
+            <embed class="embed-pdf" src="semana9.pdf" type="application/pdf" width="100%" height="600px">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Mi página web</p>
+    </footer>
+    
+    <!-- Reproductor de música de fondo -->
+    <audio id="background-music" loop>
+        <source src="FOLKLORE DE COLOMBIA - APURE EN UN VIAJE (DIGITAL AUDIO).mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Botón de reproducción/pausa -->
+    <button class="play-pause-btn" id="playPauseBtn">
+        <i class="fas fa-play" id="playPauseIcon"></i>
+    </button>
+
+    <script>
+        // JavaScript para controlar la reproducción y pausa
+        const audio = document.getElementById('background-music');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playPauseIcon = document.getElementById('playPauseIcon');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseIcon.classList.remove('fa-play');
+                playPauseIcon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                playPauseIcon.classList.remove('fa-pause');
+                playPauseIcon.classList.add('fa-play');
+            }
+        });
+    </script>
+</body>
+</html>

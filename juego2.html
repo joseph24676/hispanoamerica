@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('compu.jpg');
+           
+          
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            gap: 20px;
+        }
+
+        .option {
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+        }
+
+        .option-title {
+            background-color: #23d16e;
+            color: #fff;
+            margin: 0;
+            padding: 15px;
+            font-size: 1.5em;
+        }
+
+        .option-description {
+            padding: 15px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .option-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #23d16e;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-top: 1px solid #ddd;
+        }
+
+        .option-btn:hover {
+            background-color: #23d16e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="option">
+            <h2 class="option-title">Juego 1</h2>
+            <p class="option-description">Diviertete con el juego de la serpiente....</p>
+            <button class="option-btn" onclick="optionAction('serp.html')">Jugar</button>
+        </div>
+        <div class="option">
+            <h2 class="option-title">Juego 2</h2>
+            <p class="option-description"> Diviertete con el juego de completar palabras</p>
+            <button class="option-btn" onclick="optionAction('complete.html')">Jugar</button>
+        </div>
+
+    </div>
+    <script>
+        function optionAction(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+

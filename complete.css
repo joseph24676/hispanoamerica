@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('play.png');
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: rgb(145, 247, 221);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; /* Fuente en negrita */
+}
+.blank {
+    border-bottom: 2px dashed #333;
+    padding: 0 5px;
+}
+
+.text-container {
+    margin-bottom: 30px;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.option-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.option {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.option.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para los grupos de opciones */
+.option-group {
+    margin-bottom: 20px;
+}
+
+.option-group p {
+    margin: 5px 0; /* Espaciado vertical entre las opciones */
+}
+
+.option {
+    display: block; /* Hace que cada opción ocupe toda la línea */
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0; /* Elimina el margen horizontal */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Opcional: para alinear los textos de las opciones de manera uniforme */
+.option-group p {
+    text-align: center;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de la Serpiente - Pedro Páramo</title>
+    <link rel="stylesheet" href="serp.css">
+</head>
+<body>
+    <h1>Juego de la Serpiente - Pedro Páramo</h1>
+    <div id="instructionsContainer">
+        <ol id="instructions">
+            <li>Usa las flechas del teclado para mover la serpiente.</li>
+            <li>Come la comida para ganar puntos y encontrar personajes.</li>
+            <li>Evita que la serpiente choque con las paredes o consigo misma.</li>
+        </ol>
+    </div>
+    <div id="gameBoard">
+        <div id="snake"></div>
+        <div id="food"></div>
+        <div id="characterName">Personaje: </div>
+        <div id="score">Puntaje: 0</div>
+    </div>
+    <button id="startButton">Empezar el juego</button>
+    <div id="congratsMessage" class="hidden">
+        ¡FELICIDADES ENCONTRASTE A TODOS LOS PERSONAJES!!!
+    </div>
+    <script src="serp.js"></script>
+</body>
+</html>

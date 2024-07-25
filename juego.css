@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#fff;    
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#game-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#left-images, #right-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left-images img, #right-images img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#hangman-canvas {
+    margin: 0 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#word-display {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#keyboard {
+    margin-bottom: 20px;
+}
+
+.key {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.key.disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#message {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#timer {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    position: relative;
+}
+
+#timer-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#timer {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(seamless-pattern-with-gaming-icons-free-vector.jpg); /* Cambia el color de fondo a verde */
+    margin: 0;
+    position: relative;
+}
+
+#start-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Cambia el color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+#start-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50; /* Cambia el color de fondo a verde */
+    margin: 0;
+    position: relative;
+}
+#pagina {
+    background-color: #4CAF50; /* Cambia el color de fondo a verde */
+}
